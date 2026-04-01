@@ -1,12 +1,10 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { projects } from '@/data/projects';
 
 export default function Header() {
-  const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -16,12 +14,6 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  async function handleLogout() {
-    await fetch('/api/auth/logout', { method: 'POST' });
-    router.push('/login');
-    router.refresh();
-  }
 
   return (
     <header
@@ -85,17 +77,6 @@ export default function Header() {
               NEWS
             </a>
 
-            {/* Logout */}
-            <button
-              onClick={handleLogout}
-              className="flex items-center gap-1.5 text-sm font-medium text-gray-500 hover:text-red-600 transition-colors"
-            >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                  d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-              </svg>
-              ログアウト
-            </button>
           </nav>
 
           {/* Mobile menu button */}
@@ -143,12 +124,6 @@ export default function Header() {
             >
               NEWS
             </a>
-            <button
-              onClick={() => { setMobileMenuOpen(false); handleLogout(); }}
-              className="w-full text-left px-4 py-2 text-sm font-medium text-red-600 hover:bg-red-50"
-            >
-              ログアウト
-            </button>
           </div>
         )}
       </div>
