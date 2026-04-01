@@ -2,7 +2,7 @@ import type { Project } from '@/types';
 
 export const projects: Project[] = [
   {
-    slug: 'fowt',
+    slug: '1',
     name: '太陽光発電設備',
     shortName: '事業区分Ⅰ',
     cardImageWide: '/images/card-1.svg',
@@ -10,7 +10,7 @@ export const projects: Project[] = [
     category: '太陽光発電設備',
   },
   {
-    slug: 'psc-film',
+    slug: '2',
     name: 'ペロブスカイト太陽電池（フィルム型）',
     shortName: '事業区分Ⅱ',
     cardImageWide: '/images/card-2.svg',
@@ -18,7 +18,7 @@ export const projects: Project[] = [
     category: 'ペロブスカイト太陽電池（フィルム型）',
   },
   {
-    slug: 'psc-tandem',
+    slug: '3',
     name: 'ペロブスカイト太陽電池（タンデム型）',
     shortName: '事業区分Ⅲ',
     cardImageWide: '/images/card-3.svg',
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     category: 'ペロブスカイト太陽電池（タンデム型）',
   },
   {
-    slug: 'fuel-cell',
+    slug: '4',
     name: '燃料電池',
     shortName: '事業区分Ⅳ',
     cardImageWide: '/images/card-4.svg',
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     category: '燃料電池',
   },
   {
-    slug: 'electrolysis',
+    slug: '5',
     name: '水電解装置',
     shortName: '事業区分Ⅴ',
     cardImageWide: '/images/card-5.svg',
