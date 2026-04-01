@@ -46,22 +46,6 @@ export default function LoginPage() {
 
       {/* Card */}
       <div className="relative w-full max-w-md">
-        {/* Header */}
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/15 mb-4">
-            <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
-                d="M12 3C6.48 3 2 7.48 2 13c0 3.5 1.79 6.58 4.5 8.41V22h11v-.59C20.21 19.58 22 16.5 22 13c0-5.52-4.48-10-10-10z" />
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
-                d="M12 7v6l3 3" />
-            </svg>
-          </div>
-          <h1 className="text-xl font-bold text-white leading-snug">
-            脱炭素電源地域貢献型<br />投資促進事業 2026
-          </h1>
-          <p className="text-blue-200 text-sm mt-2">管理者ポータル</p>
-        </div>
-
         {/* Form */}
         <div className="bg-white rounded-2xl shadow-2xl px-8 py-10">
           <h2 className="text-lg font-bold text-gray-800 mb-6 text-center">ログイン</h2>
@@ -127,9 +111,6 @@ export default function LoginPage() {
           </form>
         </div>
 
-        <p className="text-center text-blue-200/70 text-xs mt-6">
-          © 2026 脱炭素電源地域貢献型投資促進事業
-        </p>
       </div>
     </div>
   );
