@@ -11,6 +11,19 @@ const notoSansJP = Noto_Sans_JP({
 export const metadata: Metadata = {
   title: "デモ",
   description: "デモ",
+  openGraph: {
+    title: "デモ",
+    description: "デモ",
+    siteName: "デモ",
+  },
+  twitter: {
+    title: "デモ",
+    description: "デモ",
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({

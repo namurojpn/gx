@@ -16,15 +16,18 @@ export function proxy(request: NextRequest) {
   // 未認証かつ保護対象ページ → ログインへリダイレクト
   if (!isAuthenticated && pathname !== '/login') {
     const loginUrl = new URL('/login', request.url);
-    return NextResponse.redirect(loginUrl);
+    const res = NextResponse.redirect(loginUrl);
+    res.headers.set('X-Robots-Tag', 'noindex, nofollow');
+    return res;
   }
 
-  return NextResponse.next();
+  const res = NextResponse.next();
+  res.headers.set('X-Robots-Tag', 'noindex, nofollow');
+  return res;
 }
 
 export const config = {
   matcher: [
-    // 静的ファイル・APIを除くすべてのルートに適用
     '/((?!api/auth|_next/static|_next/image|images|favicon.ico).*)',
   ],
 };
