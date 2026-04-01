@@ -1,0 +1,119 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2e6ea6"/>
+      <stop offset="55%" stop-color="#6ab0d8"/>
+      <stop offset="100%" stop-color="#b8d9e8"/>
+    </linearGradient>
+    <linearGradient id="sea2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e6fa8"/>
+      <stop offset="100%" stop-color="#0d4a7a"/>
+    </linearGradient>
+    <linearGradient id="land2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d9e56"/>
+      <stop offset="100%" stop-color="#1a6b3a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="500" fill="url(#sky2)"/>
+
+  <!-- Distant land -->
+  <path d="M0,300 Q200,270 400,285 Q600,300 800,280 L800,340 L0,340 Z" fill="#4aaa6a" opacity="0.5"/>
+  <path d="M0,320 Q150,310 300,318 Q500,328 700,310 L800,315 L800,360 L0,360 Z" fill="url(#land2)" opacity="0.6"/>
+
+  <!-- Sea -->
+  <rect x="0" y="340" width="800" height="160" fill="url(#sea2)"/>
+
+  <!-- Sea waves -->
+  <g fill="none" stroke="#5aacdc" stroke-width="1.5" opacity="0.4">
+    <path d="M0,360 Q50,355 100,360 Q150,365 200,360 Q250,355 300,360 Q350,365 400,360 Q450,355 500,360 Q550,365 600,360 Q650,355 700,360 Q750,365 800,360"/>
+    <path d="M0,380 Q60,374 120,380 Q180,386 240,380 Q300,374 360,380 Q420,386 480,380 Q540,374 600,380 Q660,386 720,380 Q760,375 800,380"/>
+    <path d="M0,400 Q70,394 140,400 Q210,406 280,400 Q350,394 420,400 Q490,406 560,400 Q630,394 700,400 Q750,406 800,400"/>
+    <path d="M0,420 Q80,415 160,420 Q240,425 320,420 Q400,415 480,420 Q560,425 640,420 Q720,415 800,420"/>
+  </g>
+  <!-- Sea shimmer -->
+  <rect x="0" y="340" width="800" height="160" fill="white" opacity="0.04"/>
+
+  <!-- Sun / light -->
+  <circle cx="680" cy="85" r="40" fill="#ffe066" opacity="0.6"/>
+  <circle cx="680" cy="85" r="25" fill="#fff5aa" opacity="0.8"/>
+
+  <!-- Clouds -->
+  <g fill="white" opacity="0.88">
+    <ellipse cx="150" cy="80" rx="72" ry="28"/>
+    <ellipse cx="198" cy="68" rx="55" ry="23"/>
+    <ellipse cx="106" cy="86" rx="44" ry="19"/>
+
+    <ellipse cx="450" cy="55" rx="80" ry="30"/>
+    <ellipse cx="505" cy="42" rx="60" ry="24"/>
+    <ellipse cx="398" cy="62" rx="48" ry="21"/>
+
+    <ellipse cx="600" cy="130" rx="55" ry="22"/>
+    <ellipse cx="640" cy="120" rx="42" ry="17"/>
+  </g>
+
+  <!-- Wind turbine 1 (left, far) -->
+  <g opacity="0.7">
+    <rect x="129" y="200" width="8" height="140" rx="3" fill="#e8e8e8"/>
+    <!-- Blades -->
+    <line x1="133" y1="200" x2="133" y2="148" stroke="#f0f0f0" stroke-width="6" stroke-linecap="round"/>
+    <line x1="133" y1="200" x2="97"  y2="225" stroke="#f0f0f0" stroke-width="6" stroke-linecap="round"/>
+    <line x1="133" y1="200" x2="169" y2="225" stroke="#f0f0f0" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="133" cy="200" r="6" fill="#ccc"/>
+  </g>
+
+  <!-- Wind turbine 2 (center-left) -->
+  <g opacity="0.85">
+    <rect x="280" y="180" width="10" height="155" rx="3" fill="#efefef"/>
+    <line x1="285" y1="180" x2="285" y2="118" stroke="#f5f5f5" stroke-width="7" stroke-linecap="round"/>
+    <line x1="285" y1="180" x2="238" y2="212" stroke="#f5f5f5" stroke-width="7" stroke-linecap="round"/>
+    <line x1="285" y1="180" x2="332" y2="212" stroke="#f5f5f5" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="285" cy="180" r="7" fill="#d0d0d0"/>
+  </g>
+
+  <!-- Wind turbine 3 (center, tallest) -->
+  <g>
+    <rect x="438" y="155" width="12" height="185" rx="3" fill="#f0f0f0"/>
+    <line x1="444" y1="155" x2="444" y2="82"  stroke="white" stroke-width="9" stroke-linecap="round"/>
+    <line x1="444" y1="155" x2="383" y2="193" stroke="white" stroke-width="9" stroke-linecap="round"/>
+    <line x1="444" y1="155" x2="505" y2="193" stroke="white" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="444" cy="155" r="9" fill="#d5d5d5"/>
+  </g>
+
+  <!-- Wind turbine 4 (right-center) -->
+  <g opacity="0.85">
+    <rect x="590" y="165" width="10" height="175" rx="3" fill="#efefef"/>
+    <line x1="595" y1="165" x2="595" y2="98"  stroke="#f5f5f5" stroke-width="8" stroke-linecap="round"/>
+    <line x1="595" y1="165" x2="540" y2="200" stroke="#f5f5f5" stroke-width="8" stroke-linecap="round"/>
+    <line x1="595" y1="165" x2="650" y2="200" stroke="#f5f5f5" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="595" cy="165" r="8" fill="#cccccc"/>
+  </g>
+
+  <!-- Wind turbine 5 (right, far) -->
+  <g opacity="0.65">
+    <rect x="725" y="195" width="8" height="145" rx="3" fill="#e8e8e8"/>
+    <line x1="729" y1="195" x2="729" y2="140" stroke="#f0f0f0" stroke-width="6" stroke-linecap="round"/>
+    <line x1="729" y1="195" x2="693" y2="220" stroke="#f0f0f0" stroke-width="6" stroke-linecap="round"/>
+    <line x1="729" y1="195" x2="765" y2="220" stroke="#f0f0f0" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="729" cy="195" r="6" fill="#cccccc"/>
+  </g>
+
+  <!-- Wind flow curves -->
+  <g fill="none" stroke="white" stroke-width="1.5" opacity="0.25" stroke-linecap="round">
+    <path d="M0,160 Q100,140 200,155 Q300,170 400,150 Q500,130 600,148 Q700,166 800,150"/>
+    <path d="M0,185 Q120,165 240,180 Q360,195 480,172 Q600,149 720,168 Q760,175 800,170"/>
+    <path d="M0,210 Q90,230 180,210 Q270,190 360,205 Q450,220 540,200 Q630,180 720,198 L800,195"/>
+  </g>
+
+  <!-- Reflections in sea -->
+  <g opacity="0.2" fill="white">
+    <rect x="430" y="345" width="4" height="30" rx="2"/>
+    <rect x="580" y="350" width="3" height="25" rx="1.5"/>
+    <rect x="278" y="348" width="3" height="22" rx="1.5"/>
+  </g>
+
+  <!-- Label -->
+  <rect x="595" y="456" width="185" height="32" rx="5" fill="rgba(0,0,0,0.45)"/>
+  <text x="609" y="477" font-family="'Noto Sans JP',sans-serif" font-size="15" fill="white" font-weight="bold">風力発電設備</text>
+</svg>

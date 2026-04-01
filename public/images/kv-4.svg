@@ -1,0 +1,158 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a6080"/>
+      <stop offset="50%" stop-color="#7aaccc"/>
+      <stop offset="100%" stop-color="#c8dce8"/>
+    </linearGradient>
+    <linearGradient id="mtn4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a8a90"/>
+      <stop offset="100%" stop-color="#50606a"/>
+    </linearGradient>
+    <linearGradient id="mtn4b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6a7880"/>
+      <stop offset="100%" stop-color="#485560"/>
+    </linearGradient>
+    <linearGradient id="ground4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a6a70"/>
+      <stop offset="100%" stop-color="#3a4850"/>
+    </linearGradient>
+    <linearGradient id="heat4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff8c00"/>
+      <stop offset="50%" stop-color="#cc3300"/>
+      <stop offset="100%" stop-color="#8b0000"/>
+    </linearGradient>
+    <linearGradient id="magma4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff6600"/>
+      <stop offset="100%" stop-color="#cc2200"/>
+    </linearGradient>
+    <clipPath id="clip4">
+      <rect x="0" y="0" width="800" height="500"/>
+    </clipPath>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="500" fill="url(#sky4)"/>
+
+  <!-- Clouds -->
+  <g fill="white" opacity="0.6">
+    <ellipse cx="120" cy="80"  rx="65" ry="24"/>
+    <ellipse cx="162" cy="70"  rx="50" ry="20"/>
+    <ellipse cx="82"  cy="86"  rx="42" ry="18"/>
+    <ellipse cx="650" cy="95"  rx="70" ry="26"/>
+    <ellipse cx="696" cy="84"  rx="54" ry="21"/>
+    <ellipse cx="606" cy="100" rx="44" ry="19"/>
+  </g>
+
+  <!-- Mountain far back left -->
+  <polygon points="-20,500 80,180 220,500" fill="#5a7080" opacity="0.5"/>
+  <polygon points="60,500 180,160 320,500"  fill="url(#mtn4b)" opacity="0.7"/>
+  <!-- Snow cap -->
+  <polygon points="180,160 165,195 195,195" fill="white" opacity="0.8"/>
+
+  <!-- Main mountain center -->
+  <polygon points="150,500 400,100 650,500" fill="url(#mtn4)"/>
+  <!-- Snow cap main -->
+  <polygon points="400,100 372,155 428,155" fill="white" opacity="0.9"/>
+
+  <!-- Mountain right -->
+  <polygon points="500,500 680,190 800,500" fill="#5a6870" opacity="0.8"/>
+
+  <!-- Ground -->
+  <path d="M0,420 Q200,405 400,415 Q600,425 800,410 L800,500 L0,500 Z" fill="url(#ground4)"/>
+
+  <!-- Underground cross-section box -->
+  <rect x="250" y="370" width="300" height="130" fill="#2a3040" opacity="0.85" rx="3"/>
+  <rect x="250" y="370" width="300" height="4"   fill="#555" rx="2"/>
+  <!-- Rock layers -->
+  <rect x="250" y="374" width="300" height="22" fill="#3a4050" opacity="0.9"/>
+  <rect x="250" y="396" width="300" height="20" fill="#303848" opacity="0.9"/>
+  <!-- Hot rock layer -->
+  <rect x="250" y="416" width="300" height="22" fill="#602010" opacity="0.85"/>
+  <!-- Magma layer -->
+  <rect x="250" y="438" width="300" height="62" fill="url(#magma4)" opacity="0.8"/>
+  <!-- Magma bubbles -->
+  <g fill="#ff9900" opacity="0.5">
+    <circle cx="290" cy="455" r="8"/>
+    <circle cx="340" cy="462" r="6"/>
+    <circle cx="390" cy="450" r="9"/>
+    <circle cx="450" cy="458" r="7"/>
+    <circle cx="510" cy="452" r="8"/>
+  </g>
+  <!-- Layer labels -->
+  <text x="258" y="391" font-family="sans-serif" font-size="9" fill="#aaa">岩盤層</text>
+  <text x="258" y="412" font-family="sans-serif" font-size="9" fill="#aaa">熱岩体</text>
+  <text x="258" y="432" font-family="sans-serif" font-size="9" fill="#ff8866">高温岩体</text>
+  <text x="258" y="462" font-family="sans-serif" font-size="9" fill="#ffaa66">マグマ熱源</text>
+
+  <!-- Geothermal well pipes -->
+  <rect x="368" y="310" width="8" height="130" fill="#c0c0c0" opacity="0.9"/>
+  <rect x="420" y="310" width="8" height="130" fill="#b0b0b0" opacity="0.9"/>
+  <!-- Pipe arrows (hot fluid up) -->
+  <polygon points="372,318 376,330 380,318" fill="#ff8800" opacity="0.8"/>
+  <polygon points="424,318 428,330 432,318" fill="#aad0f0" opacity="0.8"/>
+
+  <!-- Geothermal plant building -->
+  <rect x="320" y="310" width="160" height="90" rx="3" fill="#8090a0"/>
+  <rect x="320" y="305" width="160" height="15" rx="2" fill="#607080"/>
+  <!-- Building windows -->
+  <g fill="#a8d0e8" opacity="0.6">
+    <rect x="335" y="320" width="25" height="18" rx="2"/>
+    <rect x="370" y="320" width="25" height="18" rx="2"/>
+    <rect x="405" y="320" width="25" height="18" rx="2"/>
+    <rect x="440" y="320" width="25" height="18" rx="2"/>
+    <rect x="335" y="350" width="25" height="18" rx="2"/>
+    <rect x="370" y="350" width="25" height="18" rx="2"/>
+    <rect x="440" y="350" width="25" height="18" rx="2"/>
+  </g>
+  <!-- Door -->
+  <rect x="398" y="363" width="38" height="37" rx="2" fill="#506070"/>
+
+  <!-- Steam chimney -->
+  <rect x="455" y="270" width="18" height="55" rx="3" fill="#7080a0"/>
+  <!-- Steam from chimney -->
+  <g fill="white" opacity="0.75">
+    <ellipse cx="464" cy="258" rx="14" ry="10"/>
+    <ellipse cx="468" cy="240" rx="12" ry="9"/>
+    <ellipse cx="462" cy="222" rx="10" ry="8"/>
+    <ellipse cx="466" cy="207" rx="8"  ry="7"/>
+    <ellipse cx="460" cy="195" rx="7"  ry="6"/>
+    <ellipse cx="464" cy="185" rx="5"  ry="5"/>
+  </g>
+
+  <!-- Natural steam vents on slope -->
+  <!-- Vent 1 -->
+  <g>
+    <ellipse cx="290" cy="368" rx="8" ry="5" fill="#9a7050" opacity="0.8"/>
+    <g fill="white" opacity="0.6">
+      <ellipse cx="290" cy="358" rx="7" ry="5"/>
+      <ellipse cx="292" cy="346" rx="5" ry="4"/>
+      <ellipse cx="289" cy="336" rx="4" ry="3"/>
+    </g>
+  </g>
+  <!-- Vent 2 -->
+  <g>
+    <ellipse cx="520" cy="372" rx="7" ry="4" fill="#9a7050" opacity="0.8"/>
+    <g fill="white" opacity="0.55">
+      <ellipse cx="520" cy="362" rx="6" ry="5"/>
+      <ellipse cx="522" cy="350" rx="5" ry="4"/>
+      <ellipse cx="519" cy="340" rx="4" ry="3"/>
+    </g>
+  </g>
+  <!-- Vent 3 on mountain -->
+  <g>
+    <ellipse cx="390" cy="258" rx="6" ry="3" fill="#9a7050" opacity="0.7"/>
+    <g fill="white" opacity="0.5">
+      <ellipse cx="390" cy="248" rx="5" ry="4"/>
+      <ellipse cx="392" cy="238" rx="4" ry="3"/>
+      <ellipse cx="389" cy="230" rx="3" ry="3"/>
+    </g>
+  </g>
+
+  <!-- Heat glow on ground -->
+  <ellipse cx="400" cy="415" rx="120" ry="20" fill="#ff6600" opacity="0.08"/>
+
+  <!-- Label -->
+  <rect x="595" y="456" width="185" height="32" rx="5" fill="rgba(0,0,0,0.45)"/>
+  <text x="609" y="477" font-family="'Noto Sans JP',sans-serif" font-size="15" fill="white" font-weight="bold">地熱発電設備</text>
+</svg>

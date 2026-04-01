@@ -1,0 +1,168 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a5c82"/>
+      <stop offset="55%" stop-color="#5a9cbf"/>
+      <stop offset="100%" stop-color="#a8d0e5"/>
+    </linearGradient>
+    <linearGradient id="mtn5a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6a8090"/>
+      <stop offset="100%" stop-color="#3a5060"/>
+    </linearGradient>
+    <linearGradient id="mtn5b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a6878"/>
+      <stop offset="100%" stop-color="#304050"/>
+    </linearGradient>
+    <linearGradient id="dam5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b0bec8"/>
+      <stop offset="100%" stop-color="#7a8c9a"/>
+    </linearGradient>
+    <linearGradient id="reservoir5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a7ab8"/>
+      <stop offset="100%" stop-color="#1a4a80"/>
+    </linearGradient>
+    <linearGradient id="river5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2e8cc8"/>
+      <stop offset="100%" stop-color="#1a5a9a"/>
+    </linearGradient>
+    <linearGradient id="waterfall5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#60aadc"/>
+      <stop offset="100%" stop-color="#2060a0"/>
+    </linearGradient>
+    <linearGradient id="forest5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d9e56"/>
+      <stop offset="100%" stop-color="#1a6b3a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="500" fill="url(#sky5)"/>
+
+  <!-- Clouds -->
+  <g fill="white" opacity="0.82">
+    <ellipse cx="130" cy="75"  rx="70" ry="28"/>
+    <ellipse cx="176" cy="63"  rx="55" ry="22"/>
+    <ellipse cx="88"  cy="82"  rx="44" ry="19"/>
+    <ellipse cx="600" cy="65"  rx="78" ry="30"/>
+    <ellipse cx="650" cy="53"  rx="60" ry="24"/>
+    <ellipse cx="553" cy="72"  rx="47" ry="21"/>
+    <ellipse cx="420" cy="90"  rx="50" ry="20"/>
+    <ellipse cx="460" cy="80"  rx="40" ry="16"/>
+  </g>
+
+  <!-- Background mountains -->
+  <polygon points="-30,500 100,160 250,500"   fill="url(#mtn5b)" opacity="0.5"/>
+  <polygon points="600,500 730,150 850,500"    fill="url(#mtn5b)" opacity="0.55"/>
+  <polygon points="100,500 300,120 500,500"    fill="url(#mtn5a)" opacity="0.75"/>
+  <polygon points="320,500 520,100 720,500"    fill="url(#mtn5a)" opacity="0.6"/>
+
+  <!-- Snow caps -->
+  <polygon points="300,120 282,162 318,162"   fill="white" opacity="0.85"/>
+  <polygon points="520,100 500,148 540,148"   fill="white" opacity="0.85"/>
+  <polygon points="730,150 715,183 745,183"   fill="white" opacity="0.8"/>
+
+  <!-- Forest left slope -->
+  <g fill="url(#forest5)">
+    <polygon points="0,380 25,318 50,380"/>
+    <polygon points="40,375 68,308 96,375"/>
+    <polygon points="80,382 105,320 130,382"/>
+    <polygon points="118,378 144,314 170,378"/>
+    <polygon points="155,385 180,325 205,385"/>
+    <polygon points="0,395 28,332 56,395"/>
+    <polygon points="44,392 72,325 100,392"/>
+    <polygon points="86,398 112,334 138,398"/>
+  </g>
+
+  <!-- Forest right slope -->
+  <g fill="url(#forest5)" opacity="0.85">
+    <polygon points="630,385 655,322 680,385"/>
+    <polygon points="668,380 695,315 722,380"/>
+    <polygon points="708,388 733,326 758,388"/>
+    <polygon points="748,382 770,320 792,382"/>
+    <polygon points="635,400 660,336 685,400"/>
+    <polygon points="672,396 698,330 724,396"/>
+    <polygon points="712,402 736,340 760,402"/>
+    <polygon points="755,398 776,338 797,398"/>
+  </g>
+
+  <!-- Reservoir (water behind dam) -->
+  <path d="M180,290 Q300,275 420,280 Q500,282 560,295 L560,360 Q500,358 420,360 Q300,358 180,360 Z"
+        fill="url(#reservoir5)" opacity="0.9"/>
+  <!-- Reservoir shimmer -->
+  <g fill="none" stroke="white" stroke-width="1" opacity="0.3">
+    <path d="M200,310 Q280,305 360,308 Q440,311 520,308"/>
+    <path d="M210,325 Q290,320 370,323 Q450,326 530,323"/>
+    <path d="M220,340 Q300,336 380,338 Q460,340 535,338"/>
+  </g>
+
+  <!-- DAM structure -->
+  <!-- Dam wall -->
+  <path d="M200,295 L200,440 L220,440 L230,295 Z" fill="url(#dam5)"/>
+  <path d="M540,295 L550,440 L570,440 L560,295 Z" fill="url(#dam5)" opacity="0.9"/>
+  <!-- Dam main face -->
+  <path d="M220,295 Q390,288 550,295 L570,440 Q390,445 220,440 Z" fill="url(#dam5)"/>
+  <!-- Buttresses / relief lines -->
+  <g stroke="#8a9aa8" stroke-width="1" opacity="0.5">
+    <line x1="260" y1="298" x2="270" y2="440"/>
+    <line x1="310" y1="296" x2="320" y2="440"/>
+    <line x1="360" y1="295" x2="370" y2="440"/>
+    <line x1="410" y1="295" x2="420" y2="440"/>
+    <line x1="460" y1="296" x2="470" y2="440"/>
+    <line x1="510" y1="297" x2="519" y2="440"/>
+  </g>
+  <!-- Dam top walkway -->
+  <path d="M218,293 Q390,286 552,293 L554,302 Q390,296 220,302 Z" fill="#c8d8e0"/>
+  <!-- Railing -->
+  <path d="M225,296 Q390,289 548,296" fill="none" stroke="#a0b0c0" stroke-width="1.5"/>
+  <!-- Gate openings at bottom -->
+  <g fill="#4a6880">
+    <rect x="285" y="415" width="32" height="22" rx="3"/>
+    <rect x="355" y="415" width="32" height="22" rx="3"/>
+    <rect x="425" y="415" width="32" height="22" rx="3"/>
+    <rect x="495" y="415" width="32" height="22" rx="3"/>
+  </g>
+
+  <!-- Water discharge / spillway -->
+  <path d="M280,437 Q390,440 510,437 L515,455 Q390,460 275,455 Z" fill="url(#waterfall5)" opacity="0.9"/>
+  <!-- Spray -->
+  <g fill="white" opacity="0.4">
+    <ellipse cx="310" cy="455" rx="18" ry="8"/>
+    <ellipse cx="360" cy="458" rx="15" ry="7"/>
+    <ellipse cx="410" cy="456" rx="18" ry="8"/>
+    <ellipse cx="460" cy="459" rx="16" ry="7"/>
+    <ellipse cx="500" cy="454" rx="14" ry="6"/>
+  </g>
+
+  <!-- River downstream -->
+  <path d="M200,440 Q390,450 590,440 L600,500 L190,500 Z" fill="url(#river5)"/>
+  <!-- River waves -->
+  <g fill="none" stroke="white" stroke-width="1.2" opacity="0.35">
+    <path d="M220,458 Q310,453 400,456 Q490,459 575,456"/>
+    <path d="M230,472 Q320,467 410,470 Q500,473 570,470"/>
+    <path d="M215,486 Q305,482 395,484 Q485,486 565,484"/>
+  </g>
+
+  <!-- Power station building -->
+  <rect x="560" y="380" width="120" height="60" rx="3" fill="#8090a0"/>
+  <rect x="560" y="374" width="120" height="14" rx="2" fill="#607080"/>
+  <g fill="#a0d0e8" opacity="0.6">
+    <rect x="572" y="386" width="22" height="16" rx="2"/>
+    <rect x="603" y="386" width="22" height="16" rx="2"/>
+    <rect x="634" y="386" width="22" height="16" rx="2"/>
+    <rect x="572" y="410" width="22" height="16" rx="2"/>
+    <rect x="603" y="410" width="22" height="16" rx="2"/>
+  </g>
+  <rect x="646" y="405" width="26" height="35" rx="2" fill="#4a6070"/>
+
+  <!-- Turbine intake pipe -->
+  <rect x="545" y="400" width="18" height="40" rx="4" fill="#9aaab8"/>
+  <ellipse cx="554" cy="400" rx="9" ry="5" fill="#aabcc8"/>
+
+  <!-- Penstock pipes (diagonal) -->
+  <line x1="490" y1="360" x2="548" y2="408" stroke="#8090a0" stroke-width="12" stroke-linecap="round"/>
+  <line x1="490" y1="360" x2="548" y2="408" stroke="#9aaab8" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Label -->
+  <rect x="595" y="456" width="185" height="32" rx="5" fill="rgba(0,0,0,0.45)"/>
+  <text x="609" y="477" font-family="'Noto Sans JP',sans-serif" font-size="15" fill="white" font-weight="bold">水力発電設備</text>
+</svg>

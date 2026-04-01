@@ -1,0 +1,136 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg5c" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3a6a"/>
+      <stop offset="55%" stop-color="#1e5a8a"/>
+      <stop offset="100%" stop-color="#0d2848"/>
+    </linearGradient>
+    <linearGradient id="water5c" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a8ac8"/>
+      <stop offset="100%" stop-color="#1a4a80"/>
+    </linearGradient>
+    <linearGradient id="reservoir5c" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a6aaa"/>
+      <stop offset="100%" stop-color="#123868"/>
+    </linearGradient>
+    <linearGradient id="dam5c" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#8090a8"/>
+      <stop offset="100%" stop-color="#b8c8d8"/>
+    </linearGradient>
+    <radialGradient id="spray5c" cx="50%" cy="0%" r="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3a8ac8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg5c)"/>
+
+  <!-- Mountain silhouettes -->
+  <polygon points="-20,500 100,200 240,500"  fill="#122240" opacity="0.7"/>
+  <polygon points="80,500  260,150 440,500"  fill="#152848" opacity="0.8"/>
+  <polygon points="360,500 540,130 720,500"  fill="#122240" opacity="0.75"/>
+  <polygon points="600,500 730,200 820,500"  fill="#0d1e38" opacity="0.7"/>
+
+  <!-- Snow caps -->
+  <polygon points="260,150 245,185 275,185" fill="white" opacity="0.8"/>
+  <polygon points="540,130 523,170 557,170" fill="white" opacity="0.8"/>
+  <polygon points="100,200 88,228 112,228"  fill="white" opacity="0.6"/>
+
+  <!-- Reservoir / lake above dam -->
+  <path d="M160,280 Q310,260 460,268 Q540,272 580,280 L580,340 Q540,345 460,342 Q310,338 160,342 Z"
+        fill="url(#reservoir5c)" opacity="0.9"/>
+  <!-- Reservoir shimmer -->
+  <g fill="none" stroke="white" stroke-width="1" opacity="0.2">
+    <path d="M180,300 Q320,293 460,298 Q510,300 565,298"/>
+    <path d="M185,318 Q325,312 460,316 Q510,318 565,316"/>
+    <path d="M190,333 Q325,328 460,332 Q508,334 562,332"/>
+  </g>
+
+  <!-- DAM structure (central, prominent) -->
+  <!-- Dam body -->
+  <path d="M180,280 L168,430 L190,430 L210,280 Z" fill="url(#dam5c)"/>
+  <path d="M565,280 L575,430 L597,430 L580,280 Z" fill="url(#dam5c)" opacity="0.9"/>
+  <path d="M208,280 Q390,272 582,280 L600,430 Q390,438 168,430 Z" fill="url(#dam5c)"/>
+
+  <!-- Dam face texture lines -->
+  <g stroke="#9aaab8" stroke-width="0.8" opacity="0.4">
+    <line x1="250" y1="283" x2="260" y2="430"/>
+    <line x1="310" y1="280" x2="318" y2="430"/>
+    <line x1="370" y1="278" x2="378" y2="430"/>
+    <line x1="430" y1="278" x2="438" y2="430"/>
+    <line x1="490" y1="280" x2="498" y2="430"/>
+    <line x1="545" y1="282" x2="552" y2="430"/>
+  </g>
+
+  <!-- Dam crest -->
+  <path d="M206,278 Q390,270 584,278 L586,290 Q390,282 208,290 Z" fill="#c8d8e8"/>
+  <!-- Crest railing -->
+  <g stroke="#98a8b8" stroke-width="1.5">
+    <path d="M212,282 Q390,275 582,282" fill="none"/>
+  </g>
+
+  <!-- Gates -->
+  <g fill="#3a5070">
+    <rect x="268" y="410" width="35" height="20" rx="3"/>
+    <rect x="345" y="410" width="35" height="20" rx="3"/>
+    <rect x="422" y="410" width="35" height="20" rx="3"/>
+    <rect x="499" y="410" width="35" height="20" rx="3"/>
+  </g>
+
+  <!-- Spillway water -->
+  <path d="M265,430 Q390,436 510,430 L520,460 Q390,466 258,460 Z" fill="url(#water5c)" opacity="0.9"/>
+
+  <!-- Waterfall / spray -->
+  <g fill="url(#spray5c)" opacity="0.7">
+    <ellipse cx="295" cy="450" rx="18" ry="12"/>
+    <ellipse cx="345" cy="455" rx="16" ry="11"/>
+    <ellipse cx="390" cy="452" rx="20" ry="13"/>
+    <ellipse cx="438" cy="456" rx="17" ry="11"/>
+    <ellipse cx="480" cy="450" rx="16" ry="11"/>
+  </g>
+
+  <!-- River downstream -->
+  <path d="M175,430 Q390,445 615,430 L625,500 L165,500 Z" fill="url(#water5c)"/>
+  <!-- River waves -->
+  <g fill="none" stroke="white" stroke-width="1.2" opacity="0.28">
+    <path d="M200,448 Q310,442 420,446 Q520,450 605,446"/>
+    <path d="M210,462 Q320,457 430,460 Q525,463 610,460"/>
+    <path d="M195,476 Q305,472 415,475 Q515,478 600,475"/>
+    <path d="M200,490 Q310,487 420,489 Q520,491 610,489"/>
+  </g>
+
+  <!-- Power station building (right of dam) -->
+  <rect x="605" y="365" width="110" height="65" rx="3" fill="#6a7e92"/>
+  <rect x="605" y="360" width="110" height="13" rx="2" fill="#506070"/>
+  <g fill="#98c8e0" opacity="0.55">
+    <rect x="617" y="373" width="22" height="16" rx="2"/>
+    <rect x="648" y="373" width="22" height="16" rx="2"/>
+    <rect x="679" y="373" width="22" height="16" rx="2"/>
+    <rect x="617" y="397" width="22" height="16" rx="2"/>
+    <rect x="648" y="397" width="22" height="16" rx="2"/>
+  </g>
+  <rect x="688" y="393" width="24" height="37" rx="2" fill="#405060"/>
+
+  <!-- Penstock pipe -->
+  <line x1="543" y1="345" x2="606" y2="390" stroke="#7888a0" stroke-width="14" stroke-linecap="round"/>
+  <line x1="543" y1="345" x2="606" y2="390" stroke="#9aaab8" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Water drop icon (decorative) -->
+  <g transform="translate(50,80)">
+    <path d="M50,0 C50,0 0,50 0,75 C0,103 22.4,125 50,125 C77.6,125 100,103 100,75 C100,50 50,0 50,0 Z"
+          fill="#3a8ac8" opacity="0.6" transform="scale(0.55) translate(-27,-10)"/>
+  </g>
+
+  <!-- Flowing water accent lines -->
+  <g fill="none" stroke="#5aaae0" stroke-width="2" opacity="0.3" stroke-linecap="round">
+    <path d="M50,200 Q100,190 150,200 Q200,210 250,200"/>
+    <path d="M60,220 Q115,210 170,220 Q225,230 280,220"/>
+    <path d="M40,242 Q95,232 150,242 Q205,252 260,242"/>
+  </g>
+
+  <!-- Text label -->
+  <rect x="20" y="434" width="210" height="48" rx="6" fill="rgba(0,0,0,0.4)"/>
+  <text x="32" y="453" font-family="'Noto Sans JP',sans-serif" font-size="12" fill="#88c8f0" font-weight="bold">事業区分Ⅴ</text>
+  <text x="32" y="474" font-family="'Noto Sans JP',sans-serif" font-size="14" fill="white" font-weight="bold">水力発電設備</text>
+</svg>

@@ -1,0 +1,115 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3c" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f2a5a"/>
+      <stop offset="100%" stop-color="#1a4080"/>
+    </linearGradient>
+    <linearGradient id="flame3c" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#cc3300"/>
+      <stop offset="40%" stop-color="#ff6600"/>
+      <stop offset="75%" stop-color="#ffaa00"/>
+      <stop offset="100%" stop-color="#ffdd88" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glowBlue3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2680c8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0f2a5a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg3c)"/>
+  <ellipse cx="400" cy="250" rx="380" ry="280" fill="url(#glowBlue3)"/>
+
+  <!-- Silhouette trees left (dark blue-navy) -->
+  <g fill="#091e40">
+    <polygon points="0,420 30,332 60,420"/>
+    <polygon points="45,415 80,320 115,415"/>
+    <polygon points="90,422 125,327 160,422"/>
+    <polygon points="138,418 170,330 202,418"/>
+    <polygon points="0,440 35,347 70,440"/>
+    <polygon points="52,438 88,342 124,438"/>
+    <polygon points="100,444 135,352 170,444"/>
+    <polygon points="148,440 180,348 212,440"/>
+  </g>
+  <g fill="#0d2550">
+    <polygon points="15,415 42,337 69,415"/>
+    <polygon points="58,410 90,322 122,410"/>
+    <polygon points="103,418 135,332 167,418"/>
+    <polygon points="150,412 181,327 212,412"/>
+  </g>
+
+  <!-- Silhouette trees right (dark blue-navy) -->
+  <g fill="#091e40">
+    <polygon points="600,420 632,330 664,420"/>
+    <polygon points="648,415 682,324 716,415"/>
+    <polygon points="698,422 730,332 762,422"/>
+    <polygon points="745,418 775,332 800,418"/>
+    <polygon points="610,440 642,347 674,440"/>
+    <polygon points="658,438 692,346 726,438"/>
+    <polygon points="708,444 740,354 772,444"/>
+    <polygon points="755,440 781,350 800,438"/>
+  </g>
+  <g fill="#0d2550">
+    <polygon points="608,412 638,330 668,412"/>
+    <polygon points="655,408 688,320 721,408"/>
+    <polygon points="705,415 736,330 767,415"/>
+    <polygon points="752,410 778,328 800,410"/>
+  </g>
+
+  <!-- Ground -->
+  <rect x="0" y="430" width="800" height="70" fill="#091830"/>
+  <path d="M0,430 Q400,420 800,430" fill="none" stroke="#163468" stroke-width="2"/>
+
+  <!-- Central leaf icon (light blue tones for decarbonization) -->
+  <g transform="translate(320, 120) scale(1.6)">
+    <!-- Main leaf -->
+    <path d="M80,0 C120,-10 160,20 170,70 C180,120 160,180 80,210 C0,180 -20,120 -10,70 C0,20 40,-10 80,0 Z"
+          fill="#2680c8" opacity="0.9"/>
+    <!-- Leaf gradient highlight -->
+    <path d="M80,0 C100,-8 130,15 138,55 C146,95 130,148 80,175"
+          fill="none" stroke="#5aaae0" stroke-width="3" opacity="0.45"/>
+    <!-- Central vein -->
+    <path d="M80,10 Q78,110 80,205" fill="none" stroke="#1a4b8a" stroke-width="3"/>
+    <!-- Side veins -->
+    <path d="M80,50  Q50,60  20,75"  fill="none" stroke="#1a4b8a" stroke-width="1.8"/>
+    <path d="M80,80  Q50,88  18,100" fill="none" stroke="#1a4b8a" stroke-width="1.8"/>
+    <path d="M80,110 Q52,116 24,124" fill="none" stroke="#1a4b8a" stroke-width="1.6"/>
+    <path d="M80,140 Q56,144 32,150" fill="none" stroke="#1a4b8a" stroke-width="1.4"/>
+    <path d="M80,50  Q110,60  140,75"  fill="none" stroke="#1a4b8a" stroke-width="1.8"/>
+    <path d="M80,80  Q110,88  142,100" fill="none" stroke="#1a4b8a" stroke-width="1.8"/>
+    <path d="M80,110 Q108,116 136,124" fill="none" stroke="#1a4b8a" stroke-width="1.6"/>
+    <path d="M80,140 Q104,144 128,150" fill="none" stroke="#1a4b8a" stroke-width="1.4"/>
+  </g>
+
+  <!-- Stem -->
+  <path d="M400,455 Q395,430 400,340" fill="none" stroke="#163468" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Flame at base -->
+  <g transform="translate(340, 340)">
+    <path d="M60,110 C30,90 20,60 30,30 C35,10 55,0 60,20 C65,0 85,-5 90,20 C100,0 115,15 110,40 C120,20 130,35 115,60 C110,80 90,90 60,110 Z"
+          fill="url(#flame3c)" opacity="0.9"/>
+    <path d="M60,95 C42,78 38,58 46,38 C50,24 60,18 62,32 C64,18 74,14 76,30 C84,14 94,26 86,46 C96,30 104,42 95,62 C88,76 75,82 60,95 Z"
+          fill="#ffcc44" opacity="0.7"/>
+    <ellipse cx="60" cy="70" rx="14" ry="20" fill="white" opacity="0.35"/>
+  </g>
+
+  <!-- Glow under flame -->
+  <ellipse cx="400" cy="450" rx="60" ry="14" fill="#ff6600" opacity="0.15"/>
+
+  <!-- Small floating orbs (clean energy particles) -->
+  <g fill="#5aaae0" opacity="0.35">
+    <circle cx="230" cy="200" r="3"/>
+    <circle cx="260" cy="170" r="2"/>
+    <circle cx="200" cy="230" r="2.5"/>
+    <circle cx="570" cy="195" r="3"/>
+    <circle cx="540" cy="165" r="2.5"/>
+    <circle cx="600" cy="220" r="2"/>
+    <circle cx="300" cy="140" r="2"/>
+    <circle cx="500" cy="145" r="2"/>
+  </g>
+
+  <!-- Text label -->
+  <rect x="20" y="434" width="220" height="48" rx="6" fill="rgba(0,0,0,0.45)"/>
+  <text x="32" y="453" font-family="'Noto Sans JP',sans-serif" font-size="12" fill="#90c8f0" font-weight="bold">事業区分Ⅲ</text>
+  <text x="32" y="474" font-family="'Noto Sans JP',sans-serif" font-size="14" fill="white" font-weight="bold">バイオマス発電設備</text>
+</svg>

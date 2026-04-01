@@ -1,0 +1,135 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a90c8"/>
+      <stop offset="60%" stop-color="#87ceeb"/>
+      <stop offset="100%" stop-color="#c8e8f5"/>
+    </linearGradient>
+    <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a8aaa"/>
+      <stop offset="100%" stop-color="#1a5a80"/>
+    </linearGradient>
+    <linearGradient id="panel1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e4d8c"/>
+      <stop offset="100%" stop-color="#0d2b5e"/>
+    </linearGradient>
+    <radialGradient id="sun1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe066"/>
+      <stop offset="60%" stop-color="#f5a623"/>
+      <stop offset="100%" stop-color="#e8920a"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="500" fill="url(#sky1)"/>
+
+  <!-- Far mountains -->
+  <polygon points="0,320 120,200 240,300 380,180 520,280 660,160 800,240 800,380 0,380" fill="#5a8aaa" opacity="0.4"/>
+  <polygon points="0,340 100,240 220,310 350,210 480,290 620,200 750,260 800,290 800,400 0,400" fill="#3a8098" opacity="0.5"/>
+
+  <!-- Rolling green hills (ground) -->
+  <path d="M0,370 Q200,330 400,360 Q600,390 800,350 L800,500 L0,500 Z" fill="url(#hill1)"/>
+  <path d="M0,400 Q150,380 300,395 Q450,410 600,390 Q700,380 800,395 L800,500 L0,500 Z" fill="#1a4060"/>
+
+  <!-- Sun -->
+  <circle cx="680" cy="90" r="52" fill="url(#sun1)" opacity="0.95"/>
+  <!-- Sun glow -->
+  <circle cx="680" cy="90" r="68" fill="#f5a623" opacity="0.15"/>
+  <!-- Sun rays -->
+  <g stroke="#f5a623" stroke-width="3" stroke-linecap="round" opacity="0.7">
+    <line x1="680" y1="18" x2="680" y2="5"/>
+    <line x1="731" y1="39" x2="741" y2="29"/>
+    <line x1="752" y1="90" x2="765" y2="90"/>
+    <line x1="731" y1="141" x2="741" y2="151"/>
+    <line x1="680" y1="162" x2="680" y2="175"/>
+    <line x1="629" y1="141" x2="619" y2="151"/>
+    <line x1="608" y1="90" x2="595" y2="90"/>
+    <line x1="629" y1="39" x2="619" y2="29"/>
+  </g>
+
+  <!-- Clouds -->
+  <g fill="white" opacity="0.85">
+    <ellipse cx="160" cy="100" rx="65" ry="26"/>
+    <ellipse cx="205" cy="88" rx="52" ry="22"/>
+    <ellipse cx="118" cy="108" rx="42" ry="18"/>
+
+    <ellipse cx="420" cy="70" rx="70" ry="28"/>
+    <ellipse cx="468" cy="58" rx="55" ry="22"/>
+    <ellipse cx="374" cy="76" rx="44" ry="19"/>
+  </g>
+
+  <!-- Solar panel array - back row -->
+  <g fill="url(#panel1)" stroke="#2a5da0" stroke-width="0.5">
+    <rect x="60"  y="295" width="58" height="36" rx="2"/>
+    <rect x="128" y="295" width="58" height="36" rx="2"/>
+    <rect x="196" y="295" width="58" height="36" rx="2"/>
+    <rect x="264" y="295" width="58" height="36" rx="2"/>
+    <rect x="332" y="295" width="58" height="36" rx="2"/>
+    <rect x="400" y="295" width="58" height="36" rx="2"/>
+    <rect x="468" y="295" width="58" height="36" rx="2"/>
+    <rect x="536" y="295" width="58" height="36" rx="2"/>
+  </g>
+  <!-- Cell grid lines back row -->
+  <g stroke="#2a5da0" stroke-width="0.6" opacity="0.8">
+    <line x1="89" y1="295" x2="89" y2="331"/>   <line x1="60" y1="313" x2="118" y2="313"/>
+    <line x1="157" y1="295" x2="157" y2="331"/>  <line x1="128" y1="313" x2="186" y2="313"/>
+    <line x1="225" y1="295" x2="225" y2="331"/>  <line x1="196" y1="313" x2="254" y2="313"/>
+    <line x1="293" y1="295" x2="293" y2="331"/>  <line x1="264" y1="313" x2="322" y2="313"/>
+    <line x1="361" y1="295" x2="361" y2="331"/>  <line x1="332" y1="313" x2="390" y2="313"/>
+    <line x1="429" y1="295" x2="429" y2="331"/>  <line x1="400" y1="313" x2="458" y2="313"/>
+    <line x1="497" y1="295" x2="497" y2="331"/>  <line x1="468" y1="313" x2="526" y2="313"/>
+    <line x1="565" y1="295" x2="565" y2="331"/>  <line x1="536" y1="313" x2="594" y2="313"/>
+  </g>
+  <!-- Back row supports -->
+  <g stroke="#8a8a8a" stroke-width="1.5">
+    <line x1="89" y1="331" x2="84" y2="348"/>  <line x1="89" y1="331" x2="94" y2="348"/>
+    <line x1="157" y1="331" x2="152" y2="348"/> <line x1="157" y1="331" x2="162" y2="348"/>
+    <line x1="225" y1="331" x2="220" y2="348"/> <line x1="225" y1="331" x2="230" y2="348"/>
+    <line x1="293" y1="331" x2="288" y2="348"/> <line x1="293" y1="331" x2="298" y2="348"/>
+    <line x1="361" y1="331" x2="356" y2="348"/> <line x1="361" y1="331" x2="366" y2="348"/>
+    <line x1="429" y1="331" x2="424" y2="348"/> <line x1="429" y1="331" x2="434" y2="348"/>
+    <line x1="497" y1="331" x2="492" y2="348"/> <line x1="497" y1="331" x2="502" y2="348"/>
+    <line x1="565" y1="331" x2="560" y2="348"/> <line x1="565" y1="331" x2="570" y2="348"/>
+  </g>
+
+  <!-- Solar panel array - front row -->
+  <g fill="#1a3f6b" stroke="#1a3f6b" stroke-width="0.5">
+    <rect x="30"  y="345" width="64" height="40" rx="2"/>
+    <rect x="106" y="345" width="64" height="40" rx="2"/>
+    <rect x="182" y="345" width="64" height="40" rx="2"/>
+    <rect x="258" y="345" width="64" height="40" rx="2"/>
+    <rect x="334" y="345" width="64" height="40" rx="2"/>
+    <rect x="410" y="345" width="64" height="40" rx="2"/>
+    <rect x="486" y="345" width="64" height="40" rx="2"/>
+    <rect x="562" y="345" width="64" height="40" rx="2"/>
+    <rect x="638" y="345" width="64" height="40" rx="2"/>
+  </g>
+  <!-- Cell grid front row -->
+  <g stroke="#2a5da0" stroke-width="0.8" opacity="0.7">
+    <line x1="62" y1="345" x2="62" y2="385"/>   <line x1="30" y1="365" x2="94" y2="365"/>
+    <line x1="138" y1="345" x2="138" y2="385"/>  <line x1="106" y1="365" x2="170" y2="365"/>
+    <line x1="214" y1="345" x2="214" y2="385"/>  <line x1="182" y1="365" x2="246" y2="365"/>
+    <line x1="290" y1="345" x2="290" y2="385"/>  <line x1="258" y1="365" x2="322" y2="365"/>
+    <line x1="366" y1="345" x2="366" y2="385"/>  <line x1="334" y1="365" x2="398" y2="365"/>
+    <line x1="442" y1="345" x2="442" y2="385"/>  <line x1="410" y1="365" x2="474" y2="365"/>
+    <line x1="518" y1="345" x2="518" y2="385"/>  <line x1="486" y1="365" x2="550" y2="365"/>
+    <line x1="594" y1="345" x2="594" y2="385"/>  <line x1="562" y1="365" x2="626" y2="365"/>
+    <line x1="670" y1="345" x2="670" y2="385"/>  <line x1="638" y1="365" x2="702" y2="365"/>
+  </g>
+  <!-- Front row supports -->
+  <g stroke="#6a6a6a" stroke-width="2">
+    <line x1="62"  y1="385" x2="56"  y2="406"/> <line x1="62"  y1="385" x2="68"  y2="406"/>
+    <line x1="138" y1="385" x2="132" y2="406"/> <line x1="138" y1="385" x2="144" y2="406"/>
+    <line x1="214" y1="385" x2="208" y2="406"/> <line x1="214" y1="385" x2="220" y2="406"/>
+    <line x1="290" y1="385" x2="284" y2="406"/> <line x1="290" y1="385" x2="296" y2="406"/>
+    <line x1="366" y1="385" x2="360" y2="406"/> <line x1="366" y1="385" x2="372" y2="406"/>
+    <line x1="442" y1="385" x2="436" y2="406"/> <line x1="442" y1="385" x2="448" y2="406"/>
+    <line x1="518" y1="385" x2="512" y2="406"/> <line x1="518" y1="385" x2="524" y2="406"/>
+    <line x1="594" y1="385" x2="588" y2="406"/> <line x1="594" y1="385" x2="600" y2="406"/>
+    <line x1="670" y1="385" x2="664" y2="406"/> <line x1="670" y1="385" x2="676" y2="406"/>
+  </g>
+
+  <!-- Label -->
+  <rect x="595" y="456" width="185" height="32" rx="5" fill="rgba(0,0,0,0.45)"/>
+  <text x="609" y="477" font-family="'Noto Sans JP',sans-serif" font-size="15" fill="white" font-weight="bold">太陽光発電設備</text>
+</svg>

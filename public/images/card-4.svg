@@ -1,0 +1,114 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg4c" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a2800"/>
+      <stop offset="50%" stop-color="#8a3800"/>
+      <stop offset="100%" stop-color="#cc5500"/>
+    </linearGradient>
+    <linearGradient id="magma4c" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff8c00"/>
+      <stop offset="100%" stop-color="#cc2200"/>
+    </linearGradient>
+    <radialGradient id="glow4c" cx="50%" cy="80%" r="60%">
+      <stop offset="0%" stop-color="#ff6600" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#4a2800" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffcc44" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ff4400" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg4c)"/>
+  <!-- Glow from below -->
+  <rect width="800" height="500" fill="url(#glow4c)"/>
+
+  <!-- Mountain silhouette center -->
+  <polygon points="160,480 400,100 640,480" fill="#3a2010" opacity="0.9"/>
+  <!-- Mountain highlight -->
+  <polygon points="360,480 400,100 440,480" fill="#4a2818" opacity="0.5"/>
+
+  <!-- Side mountains -->
+  <polygon points="0,480 160,250 320,480"  fill="#2a1808" opacity="0.8"/>
+  <polygon points="480,480 640,250 800,480" fill="#2a1808" opacity="0.8"/>
+
+  <!-- Lava/heat fissure on mountain -->
+  <path d="M370,220 Q380,260 365,300 Q350,340 370,380 Q385,420 375,460"
+        fill="none" stroke="url(#magma4c)" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+  <path d="M430,230 Q438,270 428,310 Q418,350 432,390 Q445,430 435,465"
+        fill="none" stroke="url(#magma4c)" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Steam vents on mountain slope -->
+  <!-- Vent 1 -->
+  <ellipse cx="320" cy="310" rx="10" ry="5" fill="#5a3010" opacity="0.9"/>
+  <g fill="white" opacity="0.55">
+    <ellipse cx="320" cy="296" rx="10" ry="8"/>
+    <ellipse cx="316" cy="278" rx="9"  ry="7"/>
+    <ellipse cx="320" cy="262" rx="7"  ry="6"/>
+    <ellipse cx="315" cy="248" rx="6"  ry="5"/>
+    <ellipse cx="318" cy="237" rx="5"  ry="4"/>
+  </g>
+
+  <!-- Vent 2 -->
+  <ellipse cx="490" cy="295" rx="9" ry="5" fill="#5a3010" opacity="0.9"/>
+  <g fill="white" opacity="0.5">
+    <ellipse cx="490" cy="281" rx="9"  ry="7"/>
+    <ellipse cx="487" cy="265" rx="8"  ry="6"/>
+    <ellipse cx="491" cy="251" rx="6"  ry="5"/>
+    <ellipse cx="487" cy="240" rx="5"  ry="4"/>
+  </g>
+
+  <!-- Central steam vent at peak -->
+  <ellipse cx="400" cy="108" rx="12" ry="6" fill="#3a2010"/>
+  <g fill="white" opacity="0.65">
+    <ellipse cx="400" cy="90"  rx="14" ry="11"/>
+    <ellipse cx="405" cy="68"  rx="12" ry="10"/>
+    <ellipse cx="398" cy="48"  rx="10" ry="9"/>
+    <ellipse cx="403" cy="30"  rx="8"  ry="7"/>
+    <ellipse cx="398" cy="15"  rx="6"  ry="6"/>
+    <ellipse cx="402" cy="4"   rx="5"  ry="5"/>
+  </g>
+
+  <!-- Underground cross-section strip at bottom -->
+  <rect x="0" y="445" width="800" height="55" fill="#1a0a00" opacity="0.85"/>
+  <!-- Rock layers in strip -->
+  <rect x="0" y="445" width="800" height="14" fill="#2a1408" opacity="0.9"/>
+  <rect x="0" y="459" width="800" height="12" fill="#3a1a08" opacity="0.9"/>
+  <rect x="0" y="471" width="800" height="12" fill="url(#magma4c)" opacity="0.7"/>
+  <!-- Magma glow dots -->
+  <g fill="#ff9900" opacity="0.4">
+    <circle cx="100" cy="477" r="6"/>
+    <circle cx="220" cy="475" r="5"/>
+    <circle cx="340" cy="478" r="7"/>
+    <circle cx="460" cy="474" r="5"/>
+    <circle cx="580" cy="476" r="6"/>
+    <circle cx="700" cy="473" r="5"/>
+  </g>
+  <!-- Drill pipe symbol -->
+  <rect x="393" y="445" width="14" height="55" fill="#a08060" opacity="0.6"/>
+
+  <!-- Heat particles rising -->
+  <g fill="#ffaa44" opacity="0.3">
+    <circle cx="340" cy="400" r="3"/>
+    <circle cx="380" cy="370" r="2.5"/>
+    <circle cx="420" cy="390" r="3"/>
+    <circle cx="460" cy="360" r="2"/>
+    <circle cx="310" cy="350" r="2"/>
+    <circle cx="490" cy="380" r="2.5"/>
+  </g>
+
+  <!-- Large heat glow at base -->
+  <ellipse cx="400" cy="480" rx="300" ry="40" fill="#ff4400" opacity="0.12"/>
+
+  <!-- Geothermal symbol: mountain with arrow -->
+  <g transform="translate(355, 185)" fill="none" stroke="#ff8800" stroke-width="2.5" opacity="0.7" stroke-linecap="round">
+    <path d="M45,60 Q42,45 45,30 Q48,15 45,5"/>
+    <polygon points="40,5 45,0 50,5" fill="#ff8800" stroke="none"/>
+  </g>
+
+  <!-- Text label -->
+  <rect x="20" y="434" width="225" height="48" rx="6" fill="rgba(0,0,0,0.5)"/>
+  <text x="32" y="453" font-family="'Noto Sans JP',sans-serif" font-size="12" fill="#ffaa66" font-weight="bold">事業区分Ⅳ</text>
+  <text x="32" y="474" font-family="'Noto Sans JP',sans-serif" font-size="14" fill="white" font-weight="bold">地熱発電設備</text>
+</svg>
