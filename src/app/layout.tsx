@@ -9,8 +9,8 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "令和8年度 脱炭素電源地域貢献型投資促進事業",
-  description: "令和8年度「脱炭素電源地域貢献型投資促進事業」の公募ページです。地域の再生可能エネルギーへの投資を促進し、脱炭素社会の実現を目指します。",
+  title: "デモ",
+  description: "デモ",
 };
 
 export default function RootLayout({
